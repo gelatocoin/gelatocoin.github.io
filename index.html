@@ -25,16 +25,122 @@
 
 }
 
+.navbar{
+  max-width: 60rem;
+  margin: auto;
+}
+
+
+.gelatoImg {
+    -webkit-animation: move 2s infinite  alternate;
+    animation: move 2s infinite  alternate;
+}
+@-webkit-keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
+
+.line{
+  position: relative;
+  margin-bottom: 2rem!important;
+}
+
+
+.line::before{
+  position: absolute;
+  content: "";
+  background: hotpink;
+  width: 30%;
+  height: 0.31rem;
+  bottom: -0.3rem;
+}
+
+
+/*Mobile Query*/
+@media only screen and (max-width:480px) {
+  .socios{
+  text-align: center;
+}
+}
+
+
+a:hover{
+  color: #a92595!important;
+}
+.myBtn {
+  position: relative;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  z-index: 1;
+}
+
+.myBtn:hover{
+  color:whitesmoke!important;
+}
+
+.myBtn:after {
+  z-index: -1;
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  content: '';
+  height: 100%;
+  background: #ed213a;
+  /* fallback for old browsers */
+  background:"#8B0A8B";
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#93291e), to(#f15b43));
+  background-image: linear-gradient(to right top, #8b0a8b, #a92595, #c73c9f, #e352aa, #ff69b4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.myBtn:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+
+
 
 
   </style>
 </head>
 
 <body>
+  <!-- <nav class="navbar role="navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href ="#">
+        <img src="./images/LogoIcecreamContracts.svg" >
+      </a>
+    </div>
+  </nav> -->
   <!-- NavBar va a todo lo ancho -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand ">
-      <a class="navbar-item" href="https://bulma.io">
+      <a class="navbar-item" href="#">
         <img src="./images/LogoIcecreamContracts.svg" >
       </a>
     </div>
@@ -42,18 +148,18 @@
     <div class="navbar-menu py-2 my-2 px-2 mx-2">
 
       <div class="navbar-end">
-        <a class="navbar-item">
+        <a class="navbar-item mx-4" href="https://exchange.icecreamswap.finance/" target="_blank" >
           Swap
         </a>
 
-        <a class="navbar-item">
+        <a class="navbar-item mx-4">
           Liquidity
         </a>
-        <a class="navbar-item">
+        <a class="navbar-item mx-4" href="https://swapicecream.gitbook.io/icecreamswap-2-0/" target="_blank">
             Docs
         </a>
-        <div class="buttons">
-          <a class="button  is-outlined ">
+        <div class="buttons ">
+          <a  href="https://icecreamswap.finance" class="button  myBtn mx-4">
             <strong>Enter App</strong>
           </a>
         </div>
@@ -66,7 +172,7 @@
   <section class="hero  custom-bg is-fullheight">
     <div class="hero-body">
       <div class="container">
-        <div class="columns is-vcentered reverse-columns">
+        <div class="columns is-vcentered ">
           <div class="column
           is-10-mobile is-offset-1-mobile
           is-10-tablet is-offset-1-tablet
@@ -74,7 +180,7 @@
           is-5-widescreen is-offset-1-widescreen
           is-5-fullhd is-offset-1-fullhd" data-aos="fade-down">
 
-            <h2 class="title py-2 is-1 ">
+            <h2 class="title py-2 is-size-1 ">
               Everyone can taste the unique GELATO
             </h2>
             <div class="block">
@@ -91,8 +197,23 @@
               <button class="button">1 GLTO = 12$</button>
             </div>
 
-            <section>
-              <img src="./images/socialmedias.svg">
+            <section class="socios">
+              <a href="https://twitter.com/swapicecream" target="_blank" >
+                <img src="./images/twitter.svg" width="8%"/ class="socio">
+              </a>
+              <a href="https://t.me/IceCreamSwap" target="_blank">
+              <img src="./images/telegram.svg" width="8%"/>
+              </a>
+              <a href="https://medium.com/@icecreamswap" target="_blank">
+              <img src="./images/medium.svg" width="8%"/>
+            </a>
+              <a href="https://swapicecream.gitbook.io/icecreamswap-2-0/" target="_blank">
+              <img src="./images/docbook.svg" width="8%"/>
+              </a>
+            </a>
+              <a href="https://github.com/icecreamswap" target="_blank">
+              <img src="./images/github.svg" width="8%"/>
+              </a>
             </section>
           </div>
           <div data-aos="fade-right" class="column
@@ -102,7 +223,7 @@
           is-4-widescreen is-offset-1-widescreen
           is-4-fullhd is-offset-1-fullhd">
             <figure class="image is-square">
-              <img src="./images/LogoIcecreamSwapSquare.svg">
+              <img src="./images/LogoIcecreamSwapSquare.svg" class="gelatoImg">
             </figure>
             <figure class="image">
               <img src="./images/banner_bottom.svg" width="100%">
@@ -116,7 +237,7 @@
       <div class="level-item has-text-centered">
         <div>
           <p class="heading">Total Gelato Supply</p>
-          <p class="title">127,886</p>
+          <p class="title" >127,886</p>
         </div>
       </div>
       <div class="level-item has-text-centered">
@@ -212,8 +333,6 @@
   <img src="./images/Cream.svg">
   </figure>
 
-
-
   <section class="custom-bg2  hero is-medium ">
     <div class="hero-body">
       <div class="container">
@@ -230,7 +349,7 @@
                 </figure>
             </div>
             <div class="media-content">
-                <p class="title is-4">Gelato Token (GLTO)</p>
+                <p class="title is-4 line">Gelato Token (GLTO)</p>
                 <p class="subtitle is-6">0x096901973AC5b4dd14728fAE04597b90B2a47da9</p>
             </div>
         </div>
@@ -242,7 +361,7 @@
                 </figure>
             </div>
             <div class="media-content">
-                <p class="title is-4">GMilkShake Token (SHAKE))</p>
+                <p class="title is-4 line">GMilkShake Token (SHAKE))</p>
                 <p class="subtitle is-6"> 0x9F4c4AC66a6C4B3b22Da214Ca43B326FAB0826d1</p>
             </div>
         </div>
@@ -254,7 +373,7 @@
                 </figure>
             </div>
             <div class="media-content">
-                <p class="title is-4">CreamShare Token (ICS)</p>
+                <p class="title is-4 line">CreamShare Token (ICS)</p>
                 <p class="subtitle is-6">0xd4D19Bffda38349b2Bf4BAc5Fde6D14D281B72ba</p>
             </div>
         </div>
@@ -266,7 +385,7 @@
                 </figure>
             </div>
             <div class="media-content">
-                <p class="title is-4">MasterChef main pool contract.</p>
+                <p class="title is-4 line">MasterChef main pool contract.</p>
                 <p class="subtitle is-6">0xC26316b19117495E89c187339Ddb6E86f1e39f0c</p>
             </div>
         </div>
@@ -278,7 +397,7 @@
                 </figure>
             </div>
             <div class="media-content">
-                <p class="title is-4">MilkShake: MilkShake CreamShare Pool contract. </p>
+                <p class="title is-4 line" >MilkShake: MilkShake CreamShare Pool contract. </p>
                 <p class="subtitle is-6">0xC3ffBa6abFE05d086B87837ECb64705BA67DA438</p>
             </div>
         </div>
@@ -290,25 +409,23 @@
                 </figure>
             </div>
             <div class="media-content">
-                <p class="title is-4">MilkShake: MilkShake BNB Pool contract.</p>
+                <p class="title is-4 line">MilkShake: MilkShake BNB Pool contract.</p>
                 <p class="subtitle is-6">0xD4E0B91ad45E09d5aFf52Cc50bb9802EFaD01C3b</p>
             </div>
         </div>
 
-        <div class="media has-background-danger ">
-            <div class="media-left">
-                <figure class="image">
-                    <img src="./images/vlc.svg">
-                </figure>
-            </div>
-            <div class="media-content ">
-                <p class="title is-4 has-text-light">24 hour Timelock used in MasterChef contract.</p>
-                <p class="subtitle is-6 has-text-light">0xB311F9C475D449F8C523387df50af076Bc01774A</p>
-            </div>
+        <div class="columns has-background-danger p-3 is-centered">
+          <div class="column border" style=" text-align: center;">
+         
+              <img src="./images/time3.png" width="40%">
+        
+          </div>
+          <div class="column is-vcentered">
+            <p class="title is-4 has-text-light">24 hour Timelock used in MasterChef contract.</p>
+                <p class="subtitle is-6 has-text-light mt-2">0xB311F9C475D449F8C523387df50af076Bc01774A</p>
+          </div>
         </div>
-
-
-
+    
 
 
       <footer class="card-footer">
