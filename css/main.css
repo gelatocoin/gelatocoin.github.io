@@ -1,3 +1,4 @@
+@import "helper.css";
 /*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
@@ -4826,7 +4827,7 @@ a.navbar-item,
   flex-grow: 0;
   flex-shrink: 0; }
   .navbar-item img {
-    max-height: 1.75rem; }
+    max-height: 2.5rem!important; }
   .navbar-item.has-dropdown {
     padding: 0; }
   .navbar-item.is-expanded {

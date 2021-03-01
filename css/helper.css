@@ -1,0 +1,144 @@
+
+.GlobalData{
+
+}
+
+.navbar{
+  max-width: 60rem;
+  margin: auto;
+}
+
+
+.gelatoImg {
+    -webkit-animation: move 2s infinite  alternate;
+    animation: move 2s infinite  alternate;
+}
+@-webkit-keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+
+
+.line{
+  position: relative;
+  margin-bottom: 2rem!important;
+}
+
+
+.line::before{
+  position: absolute;
+  content: "";
+  background: hotpink;
+  width: 30%;
+  height: 0.31rem;
+  bottom: -0.3rem;
+}
+
+
+.icecreamlinks img{
+  max-width: 5rem;
+  height: auto;
+  margin:.3rem auto;
+}
+.socios img:hover{
+  transition: transform 200ms ease-in;
+  transform:scale(1.2);
+  opacity: 0.7;
+
+}
+.socios img{ 
+  width: 2.4rem;
+  margin:auto .28rem;
+}
+
+.creamlogo img{
+  max-width: 10rem;
+}
+
+#typewriter{
+  font-family: 'Cascadia Code', sans-serif;
+  font-size:2.4rem;
+  font-weight:600;
+}
+
+.sub-title{
+  font-family: 'Plus Jakarta Display', sans-serif;
+}
+
+
+/*Mobile Query*/
+@media only screen and (max-width:480px) {
+  .socios, .icecreamlinks, .icelinks{
+  text-align: center;
+  border:"2px solid green";
+}
+
+
+
+
+
+
+}
+
+
+a:hover{
+  color: #a92595!important;
+}
+.myBtn {
+  position: relative;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  z-index: 1;
+}
+
+.myBtn:hover{
+  color:whitesmoke!important;
+}
+
+.myBtn:after {
+  z-index: -1;
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
+  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  content: '';
+  height: 100%;
+  background: #ed213a;
+  /* fallback for old browsers */
+  background:"#8B0A8B";
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#93291e), to(#f15b43));
+  background-image: linear-gradient(to right top, #8b0a8b, #a92595, #c73c9f, #e352aa, #ff69b4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0%;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.myBtn:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+
+
+
+
