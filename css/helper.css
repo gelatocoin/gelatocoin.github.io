@@ -1,3 +1,119 @@
+.maxwidth{
+    max-width: 60rem; 
+    margin:auto;
+}
+
+div.m-auto{
+  margin:auto;
+}
+
+@media (min-width: 987px){
+  div.ml-lg-2{
+    margin-left: 8rem!important;
+
+  }
+div.tr-lg-2{
+    transform: translateY(2.3rem);
+
+  }
+}
+@media all and (min-width: 988px) {
+  .header{
+ margin:0.45rem auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .headerchildsection a{
+    margin:auto 1rem;
+  }
+}
+
+@media (max-width: 987px) {
+  
+.gelatoImg{
+  max-width: 20rem;
+  margin:auto
+}
+  .header{
+    margin:0.5rem auto;
+  
+  }
+  .headerchildsection a{
+    margin:1rem auto;
+  }
+
+  .headerchildsection a:last-child{
+    margin-bottom: 2rem;
+
+  }
+
+  .logo-menu{
+    position:relative;
+  }
+
+
+.header span{
+  cursor: pointer;
+}
+
+.headerchildsection{
+  display:flex; 
+  flex-direction:column; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.hamburger{
+  position: absolute;
+  top:33%;
+  width:2.4rem;
+  background: #8b0a8b;
+  right:1rem;
+
+}
+
+.hamburger, .hamburger::after, .hamburger::before{
+  height:0.23rem;
+}
+
+.hamburger::after, .hamburger::before{
+  position: absolute;
+}
+
+
+.hamburger:after{
+  width:2rem;
+  content: "";
+  top:0.65rem;
+  right: 0rem;
+  background: #e45ae4;
+}
+
+.hamburger::before{
+  width:1.64rem;
+  top:1.4rem;
+  content: "";
+  right:0rem;
+  background: hotpink;
+}
+
+.children{
+margin-top: 2rem;
+display: none;
+text-align: center;
+transform: translateX(-999px);
+justify-content: center;
+}
+
+  
+}
+
+.show{
+  display: flex;
+transform: translateX(0px);
+}
 
 .GlobalData{
 
@@ -8,8 +124,18 @@
   margin: auto;
 }
 
+.red-gradient-bg{
+  background: #EF3B36;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,  #EF3B36, rgb(228 106 101)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+}
+
+
 
 .gelatoImg {
+  height: auto;
     -webkit-animation: move 2s infinite  alternate;
     animation: move 2s infinite  alternate;
 }
@@ -43,7 +169,7 @@
 .icecreamlinks img{
   max-width: 5rem;
   height: auto;
-  margin:.3rem auto;
+  margin:0.3rem auto;
 }
 .socios img:hover{
   transition: transform 200ms ease-in;
@@ -51,8 +177,14 @@
   opacity: 0.7;
 
 }
+.expand-1 img:hover{
+  transition: transform 200ms ease-in;
+  transform:scale(1.1);
+  opacity: 0.7;
+
+}
 .socios img{ 
-  width: 2.4rem;
+  width: 3rem;
   margin:auto .28rem;
 }
 
@@ -77,11 +209,6 @@
   text-align: center;
   border:"2px solid green";
 }
-
-
-
-
-
 
 }
 
@@ -140,5 +267,20 @@ a:hover{
 
 
 
+.moving-custom-bg { 
+    position: 100% 0px;
+    -webkit-animation: moveToLeft 10s linear infinite;
+    animation: moveToLeft 10s linear infinite;
+}
+
+@-webkit-keyframes moveToLeft {
+    from {position: 100% 0px;}
+    to {position: 0% 0px;}
+}
+
+@keyframes moveToLeft {
+    from {position: 100% 0px;}
+    to {position: 0% 0px;}
+}
 
 
