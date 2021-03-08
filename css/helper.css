@@ -286,66 +286,66 @@ a:hover{
 
 
 
+
 .slideshow {
-height: 7rem;	
-overflow: hidden;
-position: relative;
-display:flex;
-flex-wrap: nowrap;
-justify-content: center;
-text-align: center;
-align-items: center;
-margin:1.4rem auto;
-
-}
-
-.group{
-  width:100%;
-	list-style: none;
-	display: flex;
-	
-}
-
-.group li {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-	display:flex;
-    width: 4rem;
-    height: 4rem;
-    text-align: center;
-
-    /* Starting position */
-       -moz-transform:translateX(100%);
-       -webkit-transform:translateX(100%);	
-       transform:translateX(100%);
-
- /* Apply animation to this element */	
-       -moz-animation: slider 15s linear infinite;
-       -webkit-animation: slider 15s linear infinite;
-       animation: slider 8s linear infinite;
-}
-
-/* Move it (define the animation) */
-      @-moz-keyframes slider {
-       0%   { -moz-transform: translateX(100%); }
-       100% { -moz-transform: translateX(-100%); }
-      }
-      @-webkit-keyframes slider {
-       0%   { -webkit-transform: translateX(100%); }
-       100% { -webkit-transform: translateX(-100%); }
-      }
-      @keyframes slider {
-       0%   { 
-       -moz-transform: translateX(100%); /* Firefox bug fix */
-       -webkit-transform: translateX(100%); /* Firefox bug fix */
-       transform: translateX(100%); 		
-       }
-       100% { 
-       -moz-transform: translateX(-100%); /* Firefox bug fix */
-       -webkit-transform: translateX(-100%); /* Firefox bug fix */
-       transform: translateX(-100%); 
-       }
-      }
-
-
-
+  position: sticky;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin:auto;
+  margin-top: 1.4;
+  overflow-x: hidden;
+  width:100vw;
+  
+  }
+  
+  .group{
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .group li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display:flex;
+      width: 4rem;
+      height: 4rem;
+      text-align: center;
+      animation-iteration-count: infinite;
+      /* Starting position */
+         -moz-transform:translateX(100%);
+         -webkit-transform:translateX(100%);	
+         transform:translateX(100%);
+   /* Apply animation to this element */	
+         -moz-animation: slider 15s linear infinite;
+         -webkit-animation: slider 15s linear infinite;
+         animation: slider 8s linear infinite; 
+         -webkit-animation-fill-mode: forwards;
+         animation-fill-mode: forwards;
+  }
+  
+  /* Move it (define the animation) */
+        @-moz-keyframes slider {
+         0%   { -moz-transform: translateX(-100%); }
+         100% { -moz-transform: translateX(100%); }
+        }
+        @-webkit-keyframes slider {
+         0%   { -webkit-transform: translateX(-100%); }
+         100% { -webkit-transform: translateX(100%); }
+        }
+        @keyframes slider {
+         0%   { 
+         -moz-transform: translateX(-100%); /* Firefox bug fix */
+         -webkit-transform: translateX(-100%); /* Firefox bug fix */
+         transform: translateX(-100%); 		
+         }
+         100% { 
+         -moz-transform: translateX(100%); /* Firefox bug fix */
+         -webkit-transform: translateX(100%); /* Firefox bug fix */
+         transform: translateX(100%); 
+         }
+        }
+  
