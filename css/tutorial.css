@@ -1,3 +1,51 @@
+.headings h1{
+  margin-top: 3rem;
+  display:none;
+}
+
+/* Tablet and Mobile media query */
+@media (max-width: 987px) {
+  .headings h1.mobile{
+    display:block
+  }
+  .wrapper{
+    max-width: 30rem;
+  }
+
+  .dotwrapper{
+    max-width: 29rem;
+  }
+
+  .prev {
+    left: 0;
+  
+  }
+  .next {
+    right: 0;
+   
+  }
+}
+
+/* Desktop Query */
+@media (min-width: 987px){
+  .headings h1.desktop{
+    display:block
+  }
+  .wrapper{
+    max-width: 60vw;
+  }
+
+  .prev {
+    left: -3rem;
+  
+  }
+  .next {
+    right: -3rem;
+   
+  }
+
+}
+
 * {box-sizing:border-box}
 
 section{
@@ -7,8 +55,6 @@ section{
   padding:0.5rem;
   border-radius: 10px;
   border:2px solid rgba(255, 105, 180, 0.562);
-  max-width: 30rem;
-  margin-top: 3rem!important;
   margin: auto;
 }
 
@@ -17,11 +63,10 @@ section{
   justify-content:center;
   align-items: center;
   flex-wrap: nowrap;
-  max-width: 29rem;
   margin:0 auto;
 }
 
-.wrapper img{
+.wrapper img, .wrapper picture{
   height: 70vh;
 }
 /* Slideshow container */
@@ -58,17 +103,7 @@ section{
 }
 
 
-/* Position the "next button" to the right */
-.prev {
-  left: 0;
 
-}
-.next {
-  right: 0;
- 
-}
-
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   opacity: 0.7;
   background: white;
