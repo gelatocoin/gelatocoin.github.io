@@ -46,7 +46,7 @@ div.tr-lg-2{
     margin:auto 1rem;
   }
 }
-
+/* Tablet and Mobile Query*/
 @media (max-width: 987px) {
   
 .gelatoImg{
