@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener("click", togglemenu)
   
   
-  
+
   
   
   var slideIndex = 1;
