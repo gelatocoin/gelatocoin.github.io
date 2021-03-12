@@ -1,19 +1,17 @@
-.headings h1{
-  margin-top: 3rem;
-  display:none;
+picture{
+  /* display:block; */
+  /* display:none; */
 }
 
 /* Tablet and Mobile media query */
 @media (max-width: 987px) {
-  .headings h1.mobile{
-    display:block
-  }
+ 
   .wrapper{
     max-width: 30rem;
   }
 
-  .dotwrapper{
-    max-width: 29rem;
+  div.dotwrapper {
+    display:none;
   }
 
   .prev {
@@ -28,8 +26,8 @@
 
 /* Desktop Query */
 @media (min-width: 987px){
-  .headings h1.desktop{
-    display:block
+  .slideshow-container {
+    min-width: 38rem;
   }
   .wrapper{
     max-width: 60vw;
@@ -47,18 +45,26 @@
 }
 
 * {box-sizing:border-box}
+.headings h1{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
 
 section{
-  margin:1.4rem;
+  /* margin:1.4rem; */
 }
 .wrapper{
   padding:0.5rem;
   border-radius: 10px;
-  border:2px solid rgba(255, 105, 180, 0.562);
+  border:2px solid #8b0a8b;
   margin: auto;
 }
 
+
 .dotwrapper{
+  position: absolute;
+  bottom:0rem;
+  left:33%;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -66,16 +72,20 @@ section{
   margin:0 auto;
 }
 
+
 .wrapper img, .wrapper picture{
   height: 70vh;
 }
 /* Slideshow container */
 .slideshow-container {
+  height:70vh;
   max-width: 40rem;
   position: relative;
   margin: auto;
   text-align: center;
+  margin-bottom: 0!important;
 }
+
 
 /* Hide the images by default */
 /* .mySlides {
@@ -118,13 +128,12 @@ section{
   position: absolute;
   bottom: 0;
   width: 100%;
+  
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  /* color: #f2f2f2; */
   font-size: 12px;
-  padding: 8px 12px;
   position: absolute;
   top: 0;
 }
