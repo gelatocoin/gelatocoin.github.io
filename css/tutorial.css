@@ -102,7 +102,7 @@ section{
   /* width: auto; */
   margin-top: -22px;
   padding: 4px;
-  background: hotpink;
+  background: #8b0a8b;
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -117,8 +117,8 @@ section{
 .prev:hover, .next:hover {
   opacity: 0.7;
   background: white;
-  color:hotpink;
-  border: 1px solid hotpink;
+  color:#8b0a8b;
+  border: 1px solid #8b0a8b;
 }
 
 /* Caption text */
@@ -131,11 +131,14 @@ section{
   
 }
 
+
 /* Number text (1/3 etc) */
 .numbertext {
+  outline:2px solid red;
   font-size: 12px;
   position: absolute;
   top: 0;
+  left:0;
 }
 
 /* The dots/bullets/indicators */
