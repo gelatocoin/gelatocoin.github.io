@@ -1,11 +1,6 @@
 
 @import "menu.css";
 
-picture{
-  /* display:block; */
-  /* display:none; */
-}
-
 /* Tablet and Mobile media query */
 @media (max-width: 987px) {
  
@@ -37,11 +32,12 @@ picture{
   }
 
   .prev {
-    left: -3rem;
+
+    left: -4rem;
   
   }
   .next {
-    right: -3rem;
+    right: -4rem;
    
   }
 
@@ -91,9 +87,10 @@ background-size: cover;
   height:70vh;
   max-width: 40rem;
   position: relative;
-  /* margin: auto; */
+  margin: auto;
   text-align: center;
   margin-bottom: 0!important;
+
 
 }
 

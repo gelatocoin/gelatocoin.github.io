@@ -1,2 +1,38 @@
 @import "menu.css";
+@import "util.css";
 
+
+body{
+    color:#a92595!important;
+}
+
+.vaults-wrapper section{
+    margin-bottom: 3rem;
+
+}
+
+.vaults-wrapper{
+    outline: 2px solid red;
+    /* padding: 1.4rem; */
+}
+
+.vaults-body{
+
+}
+
+.vaults-body img{
+    max-width: 10rem;
+    height: auto;
+    outline:2px solid purple;
+
+}
+
+.vaults-bg{  
+    background-color: #f9ddff;
+    background: url("../images/vaultsbg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+}
