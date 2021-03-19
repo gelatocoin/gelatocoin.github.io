@@ -1,0 +1,11 @@
+.m-auto{
+    margin:auto;
+}
+
+.max-width{
+    border-radius: 5px;
+    background: #fcd1fcc6;
+    max-width: 30rem;
+    
+
+}

@@ -1,11 +1,4 @@
-.maxwidth{
-    max-width: 60rem; 
-    margin:auto;
-}
-
-div.m-auto{
-  margin:auto;
-}
+@import "menu.css";
 
 
 /*Mobile Query*/
@@ -34,105 +27,8 @@ div.tr-lg-2{
 
   }
 }
-@media all and (min-width: 988px) {
-  .header{
- margin:0.45rem auto;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  }
-
-  .headerchildsection a{
-    margin:auto 1rem;
-  }
-}
-/* Tablet and Mobile Query*/
-@media (max-width: 987px) {
-  
-.gelatoImg{
-  max-width: 20rem;
-  margin:auto
-}
-  .header{
-    margin:0.5rem auto;
-  
-  }
-  .headerchildsection a{
-    margin:1rem auto;
-  }
-
-  .headerchildsection a:last-child{
-    margin-bottom: 2rem;
-
-  }
-
-  .logo-menu{
-    position:relative;
-  }
 
 
-.header span{
-  cursor: pointer;
-}
-
-.headerchildsection{
-  display:flex; 
-  flex-direction:column; 
-  justify-content: center; 
-  align-items: center;
-}
-
-.hamburger{
-  position: absolute;
-  top:33%;
-  width:2.4rem;
-  background: #8b0a8b;
-  right:1rem;
-
-}
-
-.hamburger, .hamburger::after, .hamburger::before{
-  height:0.23rem;
-}
-
-.hamburger::after, .hamburger::before{
-  position: absolute;
-}
-
-
-.hamburger:after{
-  width:2rem;
-  content: "";
-  top:0.65rem;
-  right: 0rem;
-  background: #e45ae4;
-}
-
-.hamburger::before{
-  width:1.64rem;
-  top:1.4rem;
-  content: "";
-  right:0rem;
-  background: hotpink;
-}
-
-.children{
-margin-top: 2rem;
-display: none;
-text-align: center;
-transform: translateX(-999px);
-justify-content: center;
-}
-
-  
-}
-
-
-
-.show{
-  display: flex;
-transform: translateX(0px);
-}
 
 .GlobalData{
 
